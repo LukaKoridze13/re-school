@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 72px;
+  padding-block: 16px;
+  background-color: #342637;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+#title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#title span {
+  color: #ff00ff;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.main-btn {
+  padding: 12px 24px;
+  background-color: #502d50;
+  border: 1px solid #ff00ff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.main-btn:hover {
+  box-shadow: 0px 0px 4px 0px #ff00ff, inset 0px 0px 4px 0px #ff00ff;
+}
+p {
+  background-color: black;
+}
+
+aside {
+  width: 100vw;
+  height: 100dvh;
+  background-color: #502d50;
+  position: fixed;
+  top: 61px;
+  left: 100vw;
+  z-index: 10;
+  transition: all 0.1s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+aside nav {
+    flex-direction: column;
+}
+
+#menu-btn {
+  display: none;
+}
+
+aside.active {
+  left: 0;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100dvh - 78px);
+  background-image: url("https://picsum.photos/1920/1080");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  padding-top: 78px;
+}
+
+@media (max-width: 800px) {
+  main {
+    padding-top: 61px;
+  }
+  .hero {
+    height: calc(100dvh - 61px);
+  background-image: url("https://picsum.photos/800/1200");
+
+  }
+  header {
+    padding-inline: 24px;
+  }
+  header nav,
+  header .main-btn {
+    display: none;
+  }
+  #menu-btn {
+    display: block;
+  }
+}
