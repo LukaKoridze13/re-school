@@ -71,7 +71,7 @@ aside {
 }
 
 aside nav {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 #menu-btn {
@@ -100,8 +100,7 @@ main {
   }
   .hero {
     height: calc(100dvh - 61px);
-  background-image: url("https://picsum.photos/800/1200");
-
+    background-image: url("https://picsum.photos/700/1200");
   }
   header {
     padding-inline: 24px;
