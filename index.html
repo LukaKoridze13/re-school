@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-banner/css/bpg-banner.min.css" />
   </head>
   <body>
     <header>
@@ -22,12 +23,39 @@
         <a href="">მთავარი</a>
         <a href="">ჩვენ შესახებ</a>
         <a href="">კონტაქტი</a>
-         <button class="main-btn">შესვლა</button>
+        <button class="main-btn">შესვლა</button>
       </nav>
     </aside>
     <main>
-      <section class="hero"></section>
+      <section class="hero">
+        <form class="hero_form">
+          <h1>დარეგისტრირდი</h1>
+          <div>
+            <label for="name">სახელი</label>
+            <input required name="name" id="name" type="text" />
+          </div>
+          <div>
+            <label for="surname">გვარი</label>
+            <input required name="surname" id="surname" type="text" />
+          </div>
+          <div>
+            <label for="email">ელ. ფოსტა</label>
+            <input required name="email" id="email" type="email" />
+          </div>
+          <div>
+            <label for="password">პაროლი</label>
+            <input required name="password" id="password" type="password" />
+          </div>
+          <div>
+            <label for="confirm_password">გაიმეორე პაროლი</label>
+            <input required id="confirm_password" type="password" />
+          </div>
+
+          <button>რეგისტრაცია</button>
+        </form>
+      </section>
     </main>
   </body>
   <script src="./main.js"></script>
+  <script src="./validation.js"></script>
 </html>
