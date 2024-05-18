@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>შესვლა</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-banner/css/bpg-banner.min.css" />
   </head>
@@ -15,7 +15,7 @@
         <a href="">ჩვენ შესახებ</a>
         <a href="">კონტაქტი</a>
       </nav>
-      <a  href="./login.html"><button id="login_btn" class="main-btn">შესვლა</button></a>
+      <button  class="main-btn">შესვლა</button>
       <img id="menu-btn" width="24" src="./images/menu.png" alt="menu" />
     </header>
     <aside>
@@ -23,21 +23,13 @@
         <a href="">მთავარი</a>
         <a href="">ჩვენ შესახებ</a>
         <a href="">კონტაქტი</a>
-        <a href="./login.html"><button class="main-btn">შესვლა</button></a>
+        <button class="main-btn">შესვლა</button>
       </nav>
     </aside>
     <main>
       <section class="hero">
-        <form class="hero_form">
-          <h1>დარეგისტრირდი</h1>
-          <div>
-            <label for="name">სახელი</label>
-            <input required name="name" id="name" type="text" />
-          </div>
-          <div>
-            <label for="surname">გვარი</label>
-            <input required name="surname" id="surname" type="text" />
-          </div>
+        <form class="hero_form login_form">
+          <h1>შესვლა</h1>
           <div>
             <label for="email">ელ. ფოსტა</label>
             <input required name="email" id="email" type="email" />
@@ -46,16 +38,10 @@
             <label for="password">პაროლი</label>
             <input required name="password" id="password" type="password" />
           </div>
-          <div>
-            <label for="confirm_password">გაიმეორე პაროლი</label>
-            <input required id="confirm_password" type="password" />
-          </div>
-
-          <button>რეგისტრაცია</button>
+          <button>შესვლა</button>
         </form>
       </section>
     </main>
+    <script src="./login.js"></script>
   </body>
-  <script src="./main.js"></script>
-  <script src="./validation.js"></script>
 </html>
